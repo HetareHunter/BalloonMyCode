@@ -8,7 +8,7 @@ public class DebugUI : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Text playerSpeedText;
     [SerializeField] PlayerBaseMove playerBaseMove;
-    [SerializeField] PlayerGyroRotater playerGyroRotater;
+    [SerializeField] TestPlayerGyroRotater playerGyroRotater;
     [SerializeField] Text XaxisSwipeDistanceText;
     [SerializeField] Text YaxisSwipeDistanceText;
     [SerializeField] Text swipe;
@@ -36,7 +36,7 @@ public class DebugUI : MonoBehaviour
     private void Start()
     {
         playerBaseMove = player.GetComponent<PlayerBaseMove>();
-        playerGyroRotater = player.GetComponent<PlayerGyroRotater>();
+        playerGyroRotater = player.GetComponent<TestPlayerGyroRotater>();
     }
     // Update is called once per frame
     void Update()
